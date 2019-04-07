@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/blog">Blog</router-link>
-    </div>
+  <v-app id="app">
+    <v-toolbar>
+      <v-toolbar-items id="nav">
+        <v-btn to="/">Home</v-btn>
+        <v-btn to="/about">About</v-btn>
+        <v-btn to="/blog">Blog</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
     <router-view />
-  </div>
+  </v-app>
 </template>
 
 <style>
@@ -18,7 +20,7 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 #nav a {
