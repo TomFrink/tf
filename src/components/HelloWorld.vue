@@ -1,7 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <v-container>
+    <v-layout>
+      <v-flex>
+        <div class="title mb-1 hello">{{ msg }}</div>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -16,6 +20,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 5px 0 0;
 }
 </style>
