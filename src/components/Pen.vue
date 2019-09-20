@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       config: {
-        'data-height': 265,
+        'data-height': 256,
         'data-theme-id': 0,
         'data-default-tab': 'js,result',
         'data-embed-version': 2,

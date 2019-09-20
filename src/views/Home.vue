@@ -1,7 +1,16 @@
 <template>
   <v-container>
     <HelloWorld msg="Welcome to Tom Frink's App" />
+    <h2>Vanilla JavaScript</h2>
     <codepen :options="codepenInput" />
+    <h2>Vue JS</h2>
+    <iframe
+      src="https://codesandbox.io/embed/calcy-stuyd?fontsize=14"
+      title="Calcy"
+      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+    ></iframe>
   </v-container>
 </template>
 
@@ -18,7 +27,7 @@ export default {
   data() {
     return {
       codepenInput: {
-        "data-height": "100%",
+        "data-height": "450",
         "data-theme-id": "dark",
         "data-slug-hash": "wLqEPe",
         "data-default-tab": "result",
