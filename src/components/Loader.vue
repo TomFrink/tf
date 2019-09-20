@@ -10,8 +10,7 @@
 <script>
 export default {
   name: "Loader",
-  props: [""],
-  mounted() {}
+  props: [""]
 };
 </script>
 
