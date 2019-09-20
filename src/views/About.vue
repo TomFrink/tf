@@ -6,7 +6,7 @@
         <p>
           <img src="../assets/grand-canyon.jpg" alt="pic" height="425px" />
         </p>
-        <p>
+        <!-- <p>
           My name is Tom Frink.
         </p>
 
@@ -17,17 +17,15 @@
         <p>
           It's important to understand what people need to serve them best. You
           might say, you need to know what they need better than they do.
-        </p>
-
+        </p> -->
+        <!-- 
         <p>
-          I find the best method of understanding what people need is to use
-          empathy. To say to yourself, if I were { this person }, how would I
-          want to { solve this problem }? And expand on it from there.
-        </p>
-
+          
+        </p> -->
+        <!-- 
         <p>
-          Let's have some fun! 
-        </p>
+          Let's have some fun!
+        </p> -->
       </v-flex>
     </v-layout>
   </v-container>

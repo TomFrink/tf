@@ -67,6 +67,7 @@ export default {
 .cssload-tetrominos {
   position: absolute;
   left: 50%;
+  top: 30%;
   transform: translate(-109px, -94px);
   -o-transform: translate(-109px, -94px);
   -ms-transform: translate(-109px, -94px);
@@ -85,9 +86,6 @@ export default {
   -moz-transition: all ease 0.35s;
   background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E')
     no-repeat top center;
-  /* tf added */
-  margin: auto;
-  top: 30%;
 }
 
 .cssload-box1 {
