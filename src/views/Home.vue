@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <HelloWorld msg="Welcome to Tom's Vue.js App" />
+    <HelloWorld msg="Welcome to Tom Frink's App" />
   </v-container>
 </template>
 
