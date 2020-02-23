@@ -6,16 +6,16 @@
     <div v-else>
       <h1>Blog</h1>
       <div v-for="post of posts" :key="post.id">
+        <hr />
         <p>
-          <strong>{{ post.title.rendered }}</strong>
+          <strong>{{ post.title }}</strong>
         </p>
-        <section v-html="post.content.rendered"></section>
+        <section>{{ post.body }}</section>
+        <hr />
       </div>
 
       <div v-if="errors && errors.length">
-        <p v-for="error of errors" :key="error.id">
-          {{ error.message }}
-        </p>
+        <p v-for="error of errors" :key="error.id">{{ error.message }}</p>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
   // Fetches posts when the component is created.
   mounted() {
     axios
-      .get(`http://blog.tomfrink.com/wp-json/wp/v2/posts`)
+      .get(`https://jsonplaceholder.typicode.com/posts`)
       .then(response => {
         // JSON responses are automatically parsed.
         this.posts = response.data;

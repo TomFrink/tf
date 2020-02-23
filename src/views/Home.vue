@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <HelloWorld msg="Welcome to Tom Frink's App" />
+    <HelloWorld msg="Welcome to Tom Frink's Playground" />
     <h2>Vanilla JavaScript</h2>
     <codepen :options="codepenInput" />
     <h2>Vue JS</h2>
