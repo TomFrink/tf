@@ -7,9 +7,9 @@
       <h1>Blog</h1>
       <h3>
         Currently pulled from
-        <a
-          href="https://jsonplaceholder.typicode.com/"
-        >jsonplaceholder.typicode.com/posts</a>
+        <a href="https://jsonplaceholder.typicode.com/"
+          >jsonplaceholder.typicode.com/posts</a
+        >
         REST API
       </h3>
       <div v-for="post of posts" :key="post.id">
