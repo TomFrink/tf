@@ -1,15 +1,28 @@
 <template>
-  <v-container>
+  <v-container grid-list-xl>
     <h1 class="display-2">Welcome {{ person }}!</h1>
 
-    <v-layout align-center>
-      <v-flex xs12 md6 offset-md3>
+    <v-layout row align-center justify-space-around>
+      <v-flex md3>
+        <v-card dark tile flat>
+          <label pt-2>What's your name?</label>
+          <v-text-field
+            pb-2
+            pl-4
+            pr-4
+            v-model="person"
+            label="Name"
+            outlined
+          ></v-text-field>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-layout row align-center justify-space-around>
+      <v-flex md8>
         <v-card>
-          <label class="col-sm-6">What's your name?</label>
-          <v-text-field v-model="person" label="Name" outlined></v-text-field>
           <v-card-text title
-            >Well, {{ person }}, thank you for coming to see my
-            page.</v-card-text
+            >Well, {{ person }}, my name is Tom Frink. <br />Thank you for
+            coming to see my page.</v-card-text
           >
           <p>
             There isn't a lot of stuff here at the moment. <br />
