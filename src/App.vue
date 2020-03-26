@@ -4,6 +4,7 @@
       <v-toolbar-items id="nav">
         <v-btn to="/">Home</v-btn>
         <v-btn to="/about">About</v-btn>
+        <v-btn to="/projects">Projects</v-btn>
         <v-btn to="/blog">Blog</v-btn>
       </v-toolbar-items>
     </v-toolbar>

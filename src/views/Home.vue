@@ -1,44 +1,38 @@
 <template>
   <v-container>
-    <HelloWorld msg="Welcome to Tom Frink's Playground" />
-    <h2>Vanilla JavaScript</h2>
-    <codepen :options="codepenInput" />
-    <h2>Vue JS</h2>
-    <iframe
-      src="https://codesandbox.io/embed/calcy-stuyd?fontsize=14"
-      title="Calcy"
-      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-    ></iframe>
+    <h1 class="display-2">Welcome {{ person }}!</h1>
+
+    <v-layout align-center>
+      <v-flex xs12 md6 offset-md3>
+        <v-card>
+          <label class="col-sm-6">What's your name?</label>
+          <v-text-field v-model="person" label="Name" outlined></v-text-field>
+          <v-card-text title
+            >Well, {{ person }}, thank you for coming to see my
+            page.</v-card-text
+          >
+          <p>
+            There isn't a lot of stuff here at the moment. <br />
+            But I promise you, there is more to come.
+          </p>
+          <p>
+            See, I've been doing a bit of mise en place. And now it's time to
+            start cooking 😊
+          </p>
+          <p>
+            Feel free to send some feedback my way, good, bad or indifferent.
+          </p>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
-import Codepen from "../components/Pen";
-
 export default {
-  name: "home",
-  components: {
-    HelloWorld,
-    Codepen
-  },
   data() {
     return {
-      codepenInput: {
-        "data-height": "450",
-        "data-theme-id": "dark",
-        "data-slug-hash": "wLqEPe",
-        "data-default-tab": "result",
-        "data-user": "TFcuse",
-        "data-embed-version": 2,
-        "data-pen-title": "Bridge-ECL.2",
-        placeholder: `
-          See the Pen <a href="https://codepen.io/TFcuse/pen/wLqEPe">here</a>.
-          `,
-        wrapperClass: "codepen-embed"
-      }
+      person: "Friend"
     };
   }
 };
