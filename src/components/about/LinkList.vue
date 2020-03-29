@@ -1,28 +1,19 @@
 <template>
-  <v-container pa-0>
-    <base-subheading>Relevant Links</base-subheading>
-    <v-layout align-center mb-2>
-      <v-flex xs12 d-flex>
-        <v-img
-          :src="require(`@/assets/github_icon.png`)"
-          class="mr-3"
-          height="36"
-          max-width="36"
-        />
-        <div>
-          <div class="subheading" align-center>
-            <a href="https://github.com/TomFrink"
-              ><v-img
-                :src="require('@/assets/github_logo.png')"
-                height="36"
-                max-width="100"
-            /></a>
+  <v-container align-content-center pa-3>
+    <v-layout mb-2>
+      <v-card class="ma-3 pa-3">
+        <v-img :src="require(`@/assets/github_icon.png`)" auto-height> </v-img>
+        <v-card-title primary-title class="justify-center">
+          <div>
+            <h3 class="headline">Github</h3>
           </div>
-          <div class="caption">
-            UserName: TomFrink
-          </div>
-        </div>
-      </v-flex>
+        </v-card-title>
+        <v-card-actions class="justify-center">
+          <a href="https://github.com/TomFrink" target="_blank">
+            <v-btn text>Visit</v-btn>
+          </a>
+        </v-card-actions>
+      </v-card>
     </v-layout>
   </v-container>
 </template>

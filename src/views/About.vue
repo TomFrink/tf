@@ -13,12 +13,7 @@ export default {
 <template>
   <main>
     <Heading />
-    <v-container grid-list-xl>
-      <v-layout wrap>
-        <v-flex xs12 md4>
-          <LinkList />
-        </v-flex>
-      </v-layout>
-    </v-container>
+
+    <LinkList />
   </main>
 </template>
